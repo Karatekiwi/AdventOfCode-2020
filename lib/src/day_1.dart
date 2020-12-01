@@ -4,38 +4,26 @@
 
 class Day1 {
   part_1(List<int> input) {
-    var result;
-
-    OUTER:
-    for (var a in input) {
-      for (var b in input) {
-        var sum = a + b;
+    for (var num1 in input) {
+      for (var num2 in input) {
+        var sum = num1 + num2;
         if (sum == 2020) {
-          result = a * b;
-          break OUTER;
+          return num1 * num2;
         }
       }
     }
-
-    return result;
   }
 
-  part_2(input) {
-    var result;
-
-    OUTER:
-    for (var a in input) {
-      for (var b in input) {
-        for (var c in input) {
-          var sum = a + b + c;
+  part_2(List<int> input) {
+    for (var num1 in input) {
+      for (var num2 in input) {
+        for (var num3 in input) {
+          var sum = num1 + num2 + num3;
           if (sum == 2020) {
-            result = a * b * c;
-            break OUTER;
+            return num1 * num2 * num3;
           }
         }
       }
     }
-
-    return result;
   }
 }
