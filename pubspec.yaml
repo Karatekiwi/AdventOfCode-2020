@@ -1,0 +1,13 @@
+name: AdventOfCode2020
+description: Having fun with programming
+# version: 1.0.0
+
+environment:
+  sdk: '>=2.8.1 <3.0.0'
+
+dependencies:
+  analyzer_plugin: ^0.3.0
+
+dev_dependencies:
+  pedantic: ^1.9.0
+  test: ^1.14.4
