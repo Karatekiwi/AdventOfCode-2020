@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:convert';
 
 class AocFileReader {
   List<int> readFile(String path) {

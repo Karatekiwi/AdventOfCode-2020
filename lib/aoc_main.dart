@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:mirrors';
 
 import 'package:AdventOfCode2020/src/day_1.dart';
@@ -14,9 +15,14 @@ class AocMain {
 
   getSolution(int day, int part) {
     var input = AocFileReader().readFile("assets/day_$day.txt");
-    var dayClass = _dayClasses[day - 1];
-    var instanceMirror = reflect(dayClass);
-    return instanceMirror.invoke(Symbol("part_$part"), [input]).reflectee;
+    try {
+      var dayClass = _dayClasses[day - 1];
+      var instanceMirror = reflect(dayClass);
+      return instanceMirror.invoke(Symbol("part_$part"), [input]).reflectee;
+    } on RangeError {
+      print("The day is not yet implemented.");
+      exit(1);
+    }
   }
 
   void initClasses() {

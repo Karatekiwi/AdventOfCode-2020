@@ -3,7 +3,7 @@
  */
 
 class Day2 {
-  part_1(input) => print("it works 1");
+  part_1(input) => "not yet implemented";
 
-  part_2(input) => print("it works 2");
+  part_2(input) => "not yet implemented";
 }
