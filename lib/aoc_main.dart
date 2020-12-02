@@ -19,7 +19,7 @@ class AocMain {
       var dayClass = _dayClasses[day - 1];
       var instanceMirror = reflect(dayClass);
       return instanceMirror.invoke(Symbol("part_$part"), [input]).reflectee;
-    } on RangeError {
+    } on RangeError catch (ex) {
       print("The day is not yet implemented.");
       exit(1);
     }
