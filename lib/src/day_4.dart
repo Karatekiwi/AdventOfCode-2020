@@ -1,7 +1,7 @@
 import 'dart:io';
 
 /**
- * Code for AoC 2020, Day 3
+ * Code for AoC 2020, Day 4
  */
 
 class Day4 {
