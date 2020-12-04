@@ -4,6 +4,7 @@ import 'dart:mirrors';
 import 'package:AdventOfCode2020/src/day_1.dart';
 import 'package:AdventOfCode2020/src/day_2.dart';
 import 'package:AdventOfCode2020/src/day_3.dart';
+import 'package:AdventOfCode2020/src/day_4.dart';
 import 'package:AdventOfCode2020/utils/aoc_file_reader.dart';
 
 class AocMain {
@@ -29,5 +30,6 @@ class AocMain {
     _dayClasses.add(new Day1());
     _dayClasses.add(new Day2());
     _dayClasses.add(new Day3());
+    _dayClasses.add(new Day4());
   }
 }
