@@ -8,6 +8,7 @@ import 'package:AdventOfCode2020/src/day_4.dart';
 import 'package:AdventOfCode2020/src/day_5.dart';
 import 'package:AdventOfCode2020/src/day_6.dart';
 import 'package:AdventOfCode2020/src/day_7.dart';
+import 'package:AdventOfCode2020/src/day_8.dart';
 import 'package:AdventOfCode2020/utils/aoc_file_reader.dart';
 
 class AocMain {
@@ -37,5 +38,6 @@ class AocMain {
     _dayClasses.add(new Day5());
     _dayClasses.add(new Day6());
     _dayClasses.add(new Day7());
+    _dayClasses.add(new Day8());
   }
 }
