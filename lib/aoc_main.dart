@@ -9,6 +9,7 @@ import 'package:AdventOfCode2020/src/day_5.dart';
 import 'package:AdventOfCode2020/src/day_6.dart';
 import 'package:AdventOfCode2020/src/day_7.dart';
 import 'package:AdventOfCode2020/src/day_8.dart';
+import 'package:AdventOfCode2020/src/day_9.dart';
 import 'package:AdventOfCode2020/utils/aoc_file_reader.dart';
 
 class AocMain {
@@ -19,7 +20,7 @@ class AocMain {
   }
 
   getSolution(int day, int part) {
-    var input = AocFileReader().readFile("assets/day_$day.txt");
+    var input = AocFileReader().readFileInts("assets/day_$day.txt");
     try {
       var dayClass = _dayClasses[day - 1];
       var instanceMirror = reflect(dayClass);
@@ -39,5 +40,6 @@ class AocMain {
     _dayClasses.add(new Day6());
     _dayClasses.add(new Day7());
     _dayClasses.add(new Day8());
+    _dayClasses.add(new Day9());
   }
 }
