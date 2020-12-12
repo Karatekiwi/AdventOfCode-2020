@@ -119,7 +119,6 @@ print(f"Solution part 1 : {count_occupied(result)}")
 directions = [(-1, -1), (1, -1), (0, -1), (-1, 0),
               (1, 0), (-1, 1), (0, 1), (1, 1)]
 
-
 grid_length = len(seats)
 total_length = len(seats[0])
 result2 = seat_people_part2(seats)
