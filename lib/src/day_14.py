@@ -2,7 +2,7 @@ import re
 
 def use_mask(mask, value):
     result = ""
-    value_as_dec = format(int(value), "036b")
+    value_as_dec = f"{int(value):036b}"
     for x, y in zip(mask, value_as_dec):
         if x == "X":
             result += y
@@ -18,7 +18,7 @@ def replace(string, position, character):
 
 def use_mask_2(mask, value):
     result = ""
-    value_as_dec = format(int(value), "036b")
+    value_as_dec = f"{int(value):036b}"
     #print(f"v: {value_as_dec}")
     #print(f"m: {"".join(list(mask))}")
     for x, y in zip(mask, value_as_dec):
